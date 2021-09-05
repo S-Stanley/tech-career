@@ -1,0 +1,1 @@
+Get somes graph about tech job career
