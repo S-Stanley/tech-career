@@ -91,7 +91,6 @@ button, .button {
 
 .header__links a {
   font-size: 0.875rem;
-  color: #9698a6;
   -webkit-transition: color 200ms ease-in-out;
   transition: color 200ms ease-in-out;
 }
@@ -102,6 +101,7 @@ button, .button {
 
 .header__links a:not(:last-child) {
   margin-right: 32px;
+  color: #9698a6;
 }
 
 .header__links a:hover {
@@ -111,5 +111,41 @@ button, .button {
 .header__cta {
   font-size: 0.875rem;
   color: white;
+}
+
+.header__show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  visibility: hidden;
+}
+
+.hero__image {
+  position: relative;
+  background-image: url("/images/image-mockups.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 17.5rem;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  min-height: 17.5rem;
+  width: 100%;
+  background-image: url("/images/image-mockups.png");
+  background-image: url("/images/bg-intro-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 /*# sourceMappingURL=style.css.map */

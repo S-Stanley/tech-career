@@ -30,10 +30,10 @@
 				color: $grayishBlue;
 			}
 			font-size: $font-small;
-			color: $grayishBlue;
 			transition: color 200ms ease-in-out;
 			&:not(:last-child){
 				margin-right: 32px;
+				color: $grayishBlue;
 			}
 			&:hover {
 				color: $darkBlue;
@@ -44,5 +44,13 @@
 	&__cta {
 		font-size: $font-small;
 		color: $white;
+	}
+
+	&__show {
+		display: flex; 
+		flex-direction: column; 
+		align-items: center;
+		position: absolute;
+		visibility: hidden;
 	}
 }
